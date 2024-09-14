@@ -168,10 +168,11 @@ label:active div{
 }
 
 
-@media (min-width: 651px) and (max-width: 900px) {
+@media (min-width: 551px) and (max-width: 800px) {
 
     .container {
         width: 60%;
+        justify-content: center;
     }
 
     h1 {
@@ -193,10 +194,11 @@ label:active div{
     }
 }
 
-@media (min-width: 500px) and (max-width: 650px) {
+@media (min-width: 500px) and (max-width: 550px) {
 
     .container {
         width: 90%;
+        justify-content: center;
     }
 
     h1 {
@@ -223,6 +225,7 @@ label:active div{
 
     .container {
         width: 90%;
+        justify-content: center;
     }
 
     h1 {
