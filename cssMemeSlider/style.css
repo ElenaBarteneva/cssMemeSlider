@@ -110,3 +110,55 @@ label:hover div {
 label:active div{
     transform: scale(-1);
 }
+
+
+#radio1:checked ~ #l1 div,
+#radio2:checked ~ #l2 div,
+#radio3:checked ~ #l3 div,
+#radio4:checked ~ #l4 div,
+#radio5:checked ~ #l5 div,
+#radio6:checked ~ #l6 div,
+#radio7:checked ~ #l7 div {
+    background: transparent;
+    border: 0.4vh solid rgb(169, 140, 185);
+}
+
+#radio1:checked ~ .slides-wrapper .slides,
+#radio1:checked ~ .text-wrapper .text-content {
+    transform: translateX(0);
+}
+
+#radio2:checked ~ .slides-wrapper .slides,
+#radio2:checked ~ .text-wrapper .text-content {
+    transform: translateX(-14.285%);
+
+}
+
+#radio3:checked ~ .slides-wrapper .slides,
+#radio3:checked ~ .text-wrapper .text-content {
+    transform: translateX(-28.57%);
+
+}
+
+#radio4:checked ~ .slides-wrapper .slides,
+#radio4:checked ~ .text-wrapper .text-content {
+    transform: translateX(-42.855%);
+
+}
+
+#radio5:checked ~ .slides-wrapper .slides,
+#radio5:checked ~ .text-wrapper .text-content {
+    transform: translateX(-57.14%);
+}
+
+#radio6:checked ~ .slides-wrapper .slides,
+#radio6:checked ~ .text-wrapper .text-content {
+    transform: translateX(-71.425%);
+
+}
+
+#radio7:checked ~ .slides-wrapper .slides,
+#radio7:checked ~ .text-wrapper .text-content {
+    transform: translateX(-85.71%);
+
+}
