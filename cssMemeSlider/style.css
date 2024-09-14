@@ -6,19 +6,23 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color:  rgb(60 60 60);
+    /* background-color:  rgb(60 60 60); */
+    background: url(assets/back.jpg);
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 h1 {
+    width: 100%;
     white-space: nowrap;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 5vw;
     color:rgb(220, 191, 233);
     text-shadow: 1px 1px 2px black;
     margin-bottom: 1%;
+    text-align: center;
 }
 
 input {
@@ -26,17 +30,17 @@ input {
 }
 
 .container {
-    width: 60%;
+    width: 50vw;
     margin: auto auto;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .slides-wrapper {
-    width: 80%;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -57,7 +61,7 @@ input {
 }
 
 .text-wrapper {
-    width: 55%;
+    width: 30vw;
     overflow: hidden;
 }
 
