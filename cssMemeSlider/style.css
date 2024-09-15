@@ -127,6 +127,16 @@ label:active div{
     border: 0.4vh solid rgb(169, 140, 185);
 }
 
+#radio1:checked ~ #l1:hover div,
+#radio2:checked ~ #l2:hover div,
+#radio3:checked ~ #l3:hover div,
+#radio4:checked ~ #l4:hover div,
+#radio5:checked ~ #l5:hover div,
+#radio6:checked ~ #l6:hover div,
+#radio7:checked ~ #l7:hover div {
+    border-color: rgb(250, 250, 250);    
+}
+
 #radio1:checked ~ .slides-wrapper .slides,
 #radio1:checked ~ .text-wrapper .text-content {
     transform: translateX(0);
