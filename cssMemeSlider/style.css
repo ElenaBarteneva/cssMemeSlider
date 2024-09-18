@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    /* background-color:  rgb(60 60 60); */
+    background: url(assets/back.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    width: 100%;
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 5vw;
+    color:rgb(220, 191, 233);
+    text-shadow: 1px 1px 2px black;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+input {
+    display: none;
+}
+
+.container {
+    width: 50vw;
+    margin: auto auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.slides-wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides {
+    width: 700%;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.4s ease;
+}
+
+.slide {
+    width: 14.285%;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.text-wrapper {
+    width: 30vw;
+    overflow: hidden;
+}
+
+.text-content {
+    width: 700%;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.4s ease;
+}
+
+.img-text {
+    width: 14.285%;
+    margin-top: 0.4%;
+}
+
+.img-text p {
+    white-space: nowrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vh;
+    color:rgb(220, 191, 233);
+    text-shadow: 1px 1px 2px black;
+}
+
+label {
+    display: inline-block;
+    height: 3vh;
+    width: 3vh;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.4s ease;
+    margin-top: 2%;
+    padding: 0.5vh;
+}
+
+label div {
+    height: 2vh;
+    width: 2vh;
+    background-color: rgb(169, 140, 185);
+    border: 0.4vh solid rgb(169, 140, 185);
+    border-radius: 100%;
+    transition: all 0.4s ease;
+}
+
+label:hover div {
+    background-color: rgb(250, 250, 250);
+    border-color: rgb(250, 250, 250);
+    transform: scale(1.1);
+}
+
+label:active div{
+    transform: scale(-1);
+}
+
+
+#radio1:checked ~ #l1 div,
+#radio2:checked ~ #l2 div,
+#radio3:checked ~ #l3 div,
+#radio4:checked ~ #l4 div,
+#radio5:checked ~ #l5 div,
+#radio6:checked ~ #l6 div,
+#radio7:checked ~ #l7 div {
+    background: transparent;
+    border: 0.4vh solid rgb(169, 140, 185);
+}
+
+#radio1:checked ~ #l1:hover div,
+#radio2:checked ~ #l2:hover div,
+#radio3:checked ~ #l3:hover div,
+#radio4:checked ~ #l4:hover div,
+#radio5:checked ~ #l5:hover div,
+#radio6:checked ~ #l6:hover div,
+#radio7:checked ~ #l7:hover div {
+    border-color: rgb(250, 250, 250);    
+}
+
+#radio1:checked ~ .slides-wrapper .slides,
+#radio1:checked ~ .text-wrapper .text-content {
+    transform: translateX(0);
+}
+
+#radio2:checked ~ .slides-wrapper .slides,
+#radio2:checked ~ .text-wrapper .text-content {
+    transform: translateX(-14.285%);
+
+}
+
+#radio3:checked ~ .slides-wrapper .slides,
+#radio3:checked ~ .text-wrapper .text-content {
+    transform: translateX(-28.57%);
+
+}
+
+#radio4:checked ~ .slides-wrapper .slides,
+#radio4:checked ~ .text-wrapper .text-content {
+    transform: translateX(-42.855%);
+
+}
+
+#radio5:checked ~ .slides-wrapper .slides,
+#radio5:checked ~ .text-wrapper .text-content {
+    transform: translateX(-57.14%);
+}
+
+#radio6:checked ~ .slides-wrapper .slides,
+#radio6:checked ~ .text-wrapper .text-content {
+    transform: translateX(-71.425%);
+
+}
+
+#radio7:checked ~ .slides-wrapper .slides,
+#radio7:checked ~ .text-wrapper .text-content {
+    transform: translateX(-85.71%);
+
+}
+
+
+@media (min-width: 551px) and (max-width: 800px) {
+
+    .container {
+        width: 60%;
+        justify-content: center;
+    }
+
+    h1 {
+        order: 0;
+    }
+
+    .slides-wrapper {
+        width: 100%;
+        order: 1;
+    }
+
+    label {
+        order: 2;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        order: 3;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 550px) {
+
+    .container {
+        width: 90%;
+        justify-content: center;
+    }
+
+    h1 {
+        order: 0;
+    }
+
+    .slides-wrapper {
+        width: 100%;
+        order: 1;
+    }
+
+    label {
+        order: 2;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        order: 3;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 499px) {
+
+    .container {
+        width: 90%;
+        justify-content: center;
+    }
+
+    h1 {
+        order: 0;
+    }
+
+    .slides-wrapper {
+        width: 100%;
+        order: 1;
+    }
+
+    label {
+        order: 2;
+    }
+
+    .text-wrapper {
+        width: 100%;
+        order: 3;
+    }
+
+}
